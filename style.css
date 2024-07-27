@@ -1,0 +1,121 @@
+/* Basic body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling */
+header {
+    background-color: #7825de;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+/* Title styling */
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Input and button styling in header */
+header input, header button {
+    padding: 10px;
+    margin: 10px 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+header input {
+    width: 200px;
+}
+
+header button {
+    background-color: #ad56dc;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+header button:hover {
+    background-color: #3d2464;
+}
+
+/* Main section styling */
+main {
+    padding: 120px 20px 20px 20px; /* Add padding-top to account for the fixed header */
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Remove default list styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Task item styling */
+li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s, opacity 1s;
+}
+
+/* Flex grow and margin for task text */
+li span {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+/* Styling for completed tasks */
+li.completed {
+    background-color: #d4edda;
+    color: #155724;
+    text-decoration: line-through;
+}
+
+/* Styling for deleting tasks */
+li.deleting {
+    background-color: #f8d7da;
+    color: #721c24;
+    opacity: 0;
+}
+
+/* Timestamp styling */
+.timestamp {
+    font-size: 0.8em;
+    color: #6c757d;
+    margin-left: 10px;
+}
+
+/* Delete button styling */
+button.delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
